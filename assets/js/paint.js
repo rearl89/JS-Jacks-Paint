@@ -1,7 +1,7 @@
 function configureListeners() {
     var images = document.getElementsByTagName('img');
 
-
+// cause color swatches to dim when mouse is over image
      for (var i = 0; i < images.length; i++) {        
         document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false)
         document.getElementById(images[i].id).addEventListener('mouseout', removeOpacity, false)  
@@ -28,7 +28,7 @@ function removeOpacity(event) {
 
     event.preventDefault();    
 }
-
+// colors and prices
 function getProductInfo(paintColor) {
     let price;
     let colorName;  
